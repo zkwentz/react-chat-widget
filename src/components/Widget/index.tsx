@@ -15,6 +15,7 @@ type Props = {
   showCloseButton: boolean;
   fullScreenMode: boolean;
   autofocus: boolean;
+  noAddUserMessage?: boolean;
   customLauncher?: AnyFunction;
   handleNewUserMessage: AnyFunction;
   handleQuickButtonClicked?: AnyFunction;
@@ -38,6 +39,7 @@ function Widget({
   showCloseButton,
   fullScreenMode,
   autofocus,
+  noAddUserMessage,
   customLauncher,
   handleNewUserMessage,
   handleQuickButtonClicked,
@@ -66,7 +68,9 @@ function Widget({
     }
 
     handleSubmit?.(userInput);
-    dispatch(addUserMessage(userInput));
+    if (!noAddUserMessage) {
+      dispatch(addUserMessage(userInput));
+    }
     handleNewUserMessage(userInput);
     event.target.message.value = '';
   }

@@ -17,6 +17,7 @@ type Props = {
   showCloseButton?: boolean;
   fullScreenMode?: boolean;
   autofocus?: boolean;
+  noAddUserMessage?: boolean;
   profileAvatar?: string;
   launcher?: AnyFunction;
   handleTextInputChange?: (event: any) => void;
@@ -38,6 +39,7 @@ function ConnectedWidget({
   showCloseButton,
   fullScreenMode,
   autofocus,
+  noAddUserMessage,
   profileAvatar,
   launcher,
   handleNewUserMessage,
@@ -65,6 +67,7 @@ function ConnectedWidget({
         showCloseButton={showCloseButton}
         fullScreenMode={fullScreenMode}
         autofocus={autofocus}
+        noAddUserMessage={noAddUserMessage}
         customLauncher={launcher}
         handleTextInputChange={handleTextInputChange}
         chatId={chatId}
