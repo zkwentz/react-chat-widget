@@ -31,7 +31,6 @@ function Sender({ sendMessage, placeholder, disabledInput, autofocus, onTextInpu
         ref={inputRef}
         placeholder={placeholder}
         disabled={disabledInput}
-        autoFocus={autofocus}
         autoComplete="off"
         onChange={onTextInputChange}
       />
