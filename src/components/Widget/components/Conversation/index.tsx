@@ -16,7 +16,6 @@ type Props = {
   senderPlaceHolder: string;
   showCloseButton: boolean;
   disabledInput: boolean;
-  autofocus: boolean;
   className: string;
   sendMessage: AnyFunction;
   toggleChat: AnyFunction;
@@ -34,7 +33,6 @@ function Conversation({
   senderPlaceHolder,
   showCloseButton,
   disabledInput,
-  autofocus,
   className,
   sendMessage,
   toggleChat,
@@ -60,7 +58,6 @@ function Conversation({
         sendMessage={sendMessage}
         placeholder={senderPlaceHolder}
         disabledInput={disabledInput}
-        autofocus={autofocus}
         onTextInputChange={onTextInputChange}
         buttonAlt={sendButtonAlt}
       />

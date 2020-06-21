@@ -16,7 +16,6 @@ type Props = {
   senderPlaceHolder?: string;
   showCloseButton?: boolean;
   fullScreenMode?: boolean;
-  autofocus?: boolean;
   noAddUserMessage?: boolean;
   profileAvatar?: string;
   launcher?: AnyFunction;
@@ -38,7 +37,6 @@ function ConnectedWidget({
   senderPlaceHolder,
   showCloseButton,
   fullScreenMode,
-  autofocus,
   noAddUserMessage,
   profileAvatar,
   launcher,
@@ -66,7 +64,6 @@ function ConnectedWidget({
         profileAvatar={profileAvatar}
         showCloseButton={showCloseButton}
         fullScreenMode={fullScreenMode}
-        autofocus={autofocus}
         noAddUserMessage={noAddUserMessage}
         customLauncher={launcher}
         handleTextInputChange={handleTextInputChange}
@@ -89,7 +86,6 @@ const defaultProps = {
   senderPlaceHolder: 'Type a message...',
   showCloseButton: true,
   fullScreenMode: false,
-  autofocus: true,
   chatId: 'rcw-chat-container',
   launcherOpenLabel: 'Open chat',
   launcherCloseLabel: 'Close chat',

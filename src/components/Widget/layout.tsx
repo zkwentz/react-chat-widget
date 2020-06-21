@@ -23,7 +23,6 @@ type Props = {
   profileAvatar?: string;
   showCloseButton: boolean;
   fullScreenMode: boolean;
-  autofocus: boolean;
   customLauncher?: AnyFunction;
   onTextInputChange?: (event: any) => void;
   chatId: string;
@@ -46,7 +45,6 @@ function WidgetLayout({
   profileAvatar,
   showCloseButton,
   fullScreenMode,
-  autofocus,
   customLauncher,
   onTextInputChange,
   chatId,
@@ -124,7 +122,6 @@ function WidgetLayout({
           toggleChat={onToggleConversation}
           showCloseButton={showCloseButton}
           disabledInput={dissableInput}
-          autofocus={autofocus}
           titleAvatar={titleAvatar}
           className={showChat ? 'active' : 'hidden'}
           onQuickButtonClicked={onQuickButtonClicked}

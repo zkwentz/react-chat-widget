@@ -175,7 +175,6 @@ export default App;
 |**titleAvatar**|string|NO| |The picture image that will be shown next to the chat title|
 |**showCloseButton**|boolean|NO|false|Show or hide the close button in full screen mode|
 |**fullScreenMode**|boolean|NO|false|Allow the use of full screen in full desktop mode|
-|**autofocus**|boolean|NO|true|Autofocus or not the user input|
 |**launcher**|(handleToggle) => ElementType|NO||Custom Launcher component to use instead of the default|
 |**handleQuickButtonClicked**|(...args: any[]) => any|NO||Function to handle the user clicking a quick button, will receive the 'value' when clicked.|
 |**showTimeStamp**|boolean|NO|true|Show time stamp on messages|
